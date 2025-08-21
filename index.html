@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>املاک دامون | منطقه ۲۲ تهران</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    body {
+      background: radial-gradient(circle at top left, #000, #1a1a1a, #000);
+      color: #fff;
+      font-family: 'Vazirmatn', sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      animation: fadeInBody 2s ease;
+    }
+
+    @keyframes fadeInBody {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    header {
+      background: linear-gradient(135deg, #000, #222);
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 3px solid #ffd700;
+      box-shadow: 0 0 30px #ffd700;
+      animation: glowHeader 3s infinite alternate;
+    }
+
+    @keyframes glowHeader {
+      0% {box-shadow: 0 0 10px #ffd700;}
+      100% {box-shadow: 0 0 30px #ffd700;}
+    }
+
+    header h1 {
+      color: #ffd700;
+      font-size: 40px;
+      margin: 0;
+      text-shadow: 0 0 15px #ffd700;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: slideUp 1.2s ease;
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(80px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    .section h2 {
+      color: #ffd700;
+      font-size: 30px;
+      margin-bottom: 25px;
+      border-bottom: 2px dashed #555;
+      padding-bottom: 10px;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 20px #000;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: floatCard 4s infinite ease-in-out;
+    }
+
+    @keyframes floatCard {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-5px);}
+      100% {transform: translateY(0);}
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #ffd700;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,215,0,0.08), transparent);
+      transform: rotate(45deg);
+      animation: pulseGlow 6s infinite linear;
+    }
+
+    @keyframes pulseGlow {
+      0% {opacity: 0.2;}
+      50% {opacity: 0.5;}
+      100% {opacity: 0.2;}
+    }
+
+    .card h3 {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 17px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px #25D366;
+      animation: shake 1.5s infinite;
+    }
+
+    @keyframes shake {
+      0% {transform: rotate(0);}
+      25% {transform: rotate(2deg);}
+      50% {transform: rotate(-2deg);}
+      75% {transform: rotate(1deg);}
+      100% {transform: rotate(0);}
+    }
+
+    .whatsapp:hover {
+      background-color: #1da851;
+      transform: scale(1.08);
+    }
+
+    .ownership {
+      background: linear-gradient(135deg, #111, #222);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 0 30px #ffd700 inset;
+      animation: fadeIn 2s ease;
+    }
+
+    .ownership h2 {
+      color: #ffd700;
+      font-size: 26px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    .ownership p {
+      font-size: 16px;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .ownership::before {
+      content: '⭐';
+      font-size: 40px;
+      color: #ffd700;
+      display: block;
+      margin-bottom: 10px;
+      animation: pulseStar 2s infinite;
+    }
+
+    @keyframes pulseStar {
+      0% {opacity: 0.5;}
+      50% {opacity: 1;}
+      100% {opacity: 0.5;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>املاک دامون | منطقه ۲۲ تهران</h1>
+  </header>
+
+  <div class="section">
+    <h2>📍 موقعیت دفتر</h2>
+    <p>شهرک گلستان، بلوار امیرکبیر، بلوار گلها، نبش بنفشه دهم</p>
+  </div>
+
+  <div class="section">
+    <h2>👨‍💼 مدیریت</h2>
+    <div class="card">
+      <h3>مجید رفیعی</h3>
+      <p>📞 09121795978</p>
+      <p>📞 09128902690</p>
+      <a class="whatsapp" href="https://wa.me/989121795978" target="_blank">ارتباط در واتساپ</a>
+      <a class="whatsapp" href="https://wa.me/989128902690" target="_blank">ارتباط در واتساپ</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🧑‍💼 مشاوران ما</h2>
+
+    <div class="card">
+      <h3>علی قلی‌زاده</h3>
+      <p>📞 09121146816</p>
+      <p>📍 تخصص: خرید و فروش آپارتمان‌های منطقه ۲۲</p>
+      <a class="whatsapp" href="https://wa.me/989121146816" target="_blank">ارتباط در واتساپ</a>
+    </div>
+
+    <div class="card">
+      <h3>محمد اصفحانی</h3>
+      <p>📞 09122869583</p>
+      <p>📍 تخصص: برج‌های لوکس و پیش‌فروش</p>
+      <a class="whatsapp" href="https://wa.me/989122869583" target="_blank">ارتباط در واتساپ</a>
+    </div>
+
+    <div class="card">
+      <h3>محسن باقری</h3>
+      <p>📞 09123930355</p>
+      <p>📞 09128902692</p>
+      <p>📍 تخصص: مشاوره سرمایه‌گذاری ملکی و خرید فوری</p>
+      <a class="whatsapp" href="https://wa.me/989123930355" target="_blank">ارتباط در واتساپ</a>
+      <a class="whatsapp" href="https://wa.me/989128902692" target="_blank">ارتباط در واتساپ</a>
+    </div>
+
+  </
